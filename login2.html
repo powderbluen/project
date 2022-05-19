@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <link rel="stylesheet" href="/assets/css/login2.css">
+</head>
+
+<body>
+  <div class="box">
+    <div class="login-box">
+      <h2>登录</h2>
+      <form action="" id="form_login">
+        <div class="user-box">
+          <input type="text" required="" name="username">
+          <label>账号</label>
+        </div>
+        <div class="user-box">
+          <input type="password" required="" name="password">
+          <label>密码</label>
+        </div>
+
+        <a href="javascript:;" id="link_login">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          注册
+        </a>
+        <!-- 登录按钮 -->
+        <input type="submit" name="" class="loginbtn" value="登录">
+      </form>
+    </div>
+
+    <!-- 注册区域 -->
+    <div class="reg-box">
+      <h2>注册</h2>
+      <form action="" id="form_reg">
+        <div class="user-box">
+          <input type="text" required="" name="username">
+          <label>账号</label>
+        </div>
+        <div class="user-box">
+          <input type="password" required="" name="password" class="pwd">
+          <label>密码</label>
+        </div>
+        <div class="user-box">
+          <input type="password" required="" name="repwd" class="confirm">
+          <label>确认密码</label>
+        </div>
+        <a href="javascript:;" id="link_reg">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          返回登录
+        </a>
+        <!-- 注册按钮 -->
+        <input type="submit" class="regiterbtn" value="确认注册">
+      </form>
+    </div>
+  </div>
+  <!-- 导入jQuqry -->
+  <script src="/assets/lib/jquery.js"></script>
+
+  <script src="/assets/js/baseAPI.js"></script>
+
+  <!-- 导入自己的js -->
+  <script src="/assets/js/login2.js"></script>
+
+</body>
+
+</html>

@@ -24,6 +24,15 @@ $('.layui-form').on('submit', function (e) {
             if (res.status !== 0) return layer.msg('修改密码失败');
             layer.msg('修改密码成功');
             window.parent.location.href = '/login2.html';
+
+            $("#btnAddCate").click(() => {
+                layer.open({
+                    type: 1,
+                    area: ["500px", "250px"],
+                    title: "添加文章分类",
+                    content: "ABC",
+                });
+            });
         }
     })
     //重置密码
